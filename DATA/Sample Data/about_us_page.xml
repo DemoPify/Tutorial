@@ -1,0 +1,99 @@
+<div class="about-us-page row">
+<div class="about-box">
+<div class="col-sm-4  spcbt-30">
+<h2 class="title-3 no-margin">the brand.</h2>
+</div>
+<div class="col-sm-8 about-info space-bottom-50">
+<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit !</b></p>
+<p>Suspendisse ultricies scelerisque turpis, elementum ornare arcu posuere mollis. Donec vitae tempor ante, ut tempus augue. Maecenas aliquam, ante quis egestas molestie, ipsum sapien faucibus lorem, ac placerat magna purus id quam. Proin id felis sapien.</p>
+<p>Mauris metus eros, finibus et eros eget, vehicula tincidunt ex. Integer dictum turpis felis, at gravida lectus vestibulum et. Mauris vitae massa pellentesque, rutrum lacus sit amet, dictum massa.</p>
+</div>
+</div>
+<div class="about-box">
+<div class="col-sm-4  spcbt-30">
+<h2 class="title-3 no-margin">contact us.</h2>
+</div>
+<div class="col-sm-8 about-info spcbt-30">
+<ul class="about-contact">
+<li><i class="fa fa-map-marker fsz-20"></i> <span class="desc"> 1234 New Design St, Melbourne, Australia. </span></li>
+<li><i class="fa fa-envelope-o fsz-20"></i> <span class="desc"> hello@goshoptheme.com </span></li>
+<li><i class="fa fa-phone fsz-20"></i> <span class="desc"> (0091) 8547 632521 </span></li>
+</ul>
+<p><strong class="gray-color">HOUR WORK:</strong> <b> MONDAY - FRIDAY / 08AM - 05PM</b></p>
+</div>
+</div>
+<div class="about-box">
+<div class="col-sm-4  spcbt-30">
+<h2 class="title-3 no-margin">our team.</h2>
+</div>
+<div class="col-sm-8 about-info spcbt-30">
+<div class="row">
+<div class="col-md-4 col-sm-6 col-xs-6 spcbt-30">
+<div class="team-wrap" style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/1302/7671/t/2/assets/team1.jpg?2893261889964806766" style="float: none;" /><br />
+<div class="team-detail"><a href="#" class="title-1"> Alex luther </a>
+<h5 class="size-13 no-margin">Co-Founder</h5>
+<ul class="social-icon list-items">
+<li><a href="#" class="fa fa-twitter"></a></li>
+<li><a href="#" class="fa fa-facebook"></a></li>
+<li><a href="#" class="fa fa-dribbble"></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-6 spcbt-30">
+<div class="team-wrap" style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/1302/7671/t/2/assets/team2.jpg?4406207030867703385" style="float: none;" /><br />
+<div class="team-detail"><a href="#" class="title-1"> Alex luther </a>
+<h5 class="size-13 no-margin">Co-Founder</h5>
+<ul class="social-icon list-items">
+<li><a href="#" class="fa fa-twitter"></a></li>
+<li><a href="#" class="fa fa-facebook"></a></li>
+<li><a href="#" class="fa fa-dribbble"></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-6 spcbt-30">
+<div class="team-wrap" style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/1302/7671/t/2/assets/team3.jpg?7050457514006947785" style="float: none;" /><br />
+<div class="team-detail"><a href="#" class="title-1"> Alex luther </a>
+<h5 class="size-13 no-margin">Co-Founder</h5>
+<ul class="social-icon list-items">
+<li><a href="#" class="fa fa-twitter"></a></li>
+<li><a href="#" class="fa fa-facebook"></a></li>
+<li><a href="#" class="fa fa-dribbble"></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-6 spcbt-30">
+<div class="team-wrap" style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/1302/7671/t/2/assets/team4.jpg?5277326050932595451" style="float: none;" /><br />
+<div class="team-detail"><a href="#" class="title-1"> Alex luther </a>
+<h5 class="size-13 no-margin">Co-Founder</h5>
+<ul class="social-icon list-items">
+<li><a href="#" class="fa fa-twitter"></a></li>
+<li><a href="#" class="fa fa-facebook"></a></li>
+<li><a href="#" class="fa fa-dribbble"></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-6 spcbt-30">
+<div class="team-wrap" style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/1302/7671/t/2/assets/team5.jpg?9779875738773138229" style="float: none;" /><br />
+<div class="team-detail"><a href="#" class="title-1"> Alex luther </a>
+<h5 class="size-13 no-margin">Co-Founder</h5>
+<ul class="social-icon list-items">
+<li><a href="#" class="fa fa-twitter"></a></li>
+<li><a href="#" class="fa fa-facebook"></a></li>
+<li><a href="#" class="fa fa-dribbble"></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-6 spcbt-30">
+<div class="team-wrap" style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/1302/7671/t/2/assets/team6.jpg?15274947768847196079" style="float: none;" /><br />
+<div class="join-team"><a href="#" class="title-1"> Join Team </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>&ldquo;Shopify&rdquo; Documentation by &ldquo;VinaGecko&rdquo; v1.0</title>
+	<meta content="shopify theme, bike theme, bootstrap 3, shopify 2, responsive, rtl support, bikes, bicycle" name="keywords">
+	<meta content="Shopify document" name="description">
+	<meta content="Step by step developing shopify theme" name="description">
+	<link href="assets/images/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/libs.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+
+<div class="body-inner">
+	<!-- start main-menu -->
+	<nav class="main-menu navbar navbar-default">
+		<div class="container">		
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav main-nav">
+					<li class="active"><a href="#install">Tạo Store</a></li>
+					<li><a href="#theme">Tạo Theme</a></li>
+					<li><a href="#backup">Đóng gói</a></li>
+					<li><a href="#finish">Hoàn thiện</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav><!-- end .main-menu -->
+
+	<!-- section - start install -->
+	<section id="install" class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- 1. -->
+					<h2 class="heading">1. Tạo Store</h2>
+					<h3 class="entry-title accent">1.1 Tạo Store</h3>
+					<p>Vào link: https://app.shopify.com/services/partners/auth/login</p>
+					<p>- Username: xxx</p>
+					<p>- Password: xxx</p>
+					<div class="block">
+						<p>Tạo một store:</p>
+						<img src="assets/images/store.png" alt="">
+					</div>
+					<div class="block">
+						<p>Store name: SP (Tên Theme). <b>Ex</b>: SP Goshop</p>
+						<p>Password: xxx</p>
+						<img src="assets/images/store-form.png" alt="">
+					</div>
+					<h3 class="entry-title accent">1.2 Vào Store Admin</h3>
+					<div class="block">
+						<p>Đăng nhập Store Administrator theo đường link:</p>
+						<p>https://sp-(tên theme).myshopify.com/admin .<b>Ex</b>: https://sp-goshop.myshopify.com/admin</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- end #install -->
+	
+	<!-- section - start config -->
+	<section id="theme">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- 2. -->
+					<h2 class="heading">2. Tạo Theme mới</h2>
+					
+					<h3 class="entry-title accent">2.1 Tạo Theme từ Theme có sẵn</h3>					
+					<p>Trong Store admin. Vào Online Store -> Theme -> Upload Theme. Chọn file sp-goshop-home1.zip trong folder DATA/Theme/ .Sau đó kích "Upload" button:</p>
+					<p><img src="assets/images/install1.gif" alt=""></p>
+					<p class="block"><img src="assets/images/install2.png" alt=""></p>
+					<p class="block"><img src="assets/images/install3.png" alt=""></p>
+					
+					<h3 class="entry-title accent">2.2 Đổi tên Theme</h3>
+					<p>Đổi tên theme thành tên theme mới.</p>
+					<p class="block"><img src="assets/images/install4.png" alt=""></p>
+					<p class="block"><img src="assets/images/install5.png" alt=""></p>
+					
+					<h3 class="entry-title accent">2.3 Code / Customizer</h3>
+					Vào Edit HTML/CSS để code:
+					<p class="block"><img src="assets/images/theme.png" alt=""></p>
+					<p>Cấu trúc thư mục Shopify Theme: bao gồm 6 thư mục:</p>
+					<p class="block"><img src="assets/images/construct.png" alt=""></p>
+					
+					<div class="block">
+						<h4><b>Thư mục 1:</b> Layout:</h4>
+						<ul>
+							<li>- "theme.liquid":</li>
+						</ul>
+					</div>
+					
+					<div class="block">
+						<h4><b>Thư mục 2: </b>Templates:</h4>
+						<ul>
+							<li>- "404.liquid": error 404 Page</li>
+							<li>- "article.liquid": Single Post</li>
+							<li>- "blog.fullwidth.liquid": Trang Blog full width</li>
+							<li>- "blog.leftsidebar.liquid": Trang Blog có left sidebar</li>
+							<li>- "blog.rightsidebar.liquid": Trang Blog có right sidebar</li>
+							<li>- "cart.liquid": Shopping Cart Page</li>
+							<li>- "collection.16.liquid": Trang Collection hiển thị 16 products/1page</li>
+							<li>- "collection.32.liquid": Trang Collection hiển thị 32 products/1page</li>
+							<li>- "collection.all.liquid": Trang Collection hiển thị tất cả products/1page</li>
+							<li>- "collection.fullwidth.liquid": Trang Grid Collection full width</li>
+							<li>- "collection.fullwidth.list.liquid": Trang List Collection full width</li>
+							<li>- "collection.leftsidebar.liquid": Trang Grid Collection có left sidebar</li>
+							<li>- "collection.leftsidebar.list.liquid": Trang Grid Collection có right sidebar</li>
+							<li>- "collection.liquid": Trang Collection default</li>
+							<li>- "customers/account.liquid": Account Page</li>
+							<li>- "customers/activate_account.liquid": Activate account Page</li>
+							<li>- "customers/addresses.liquid": Addresses Page</li>
+							<li>- "customers/login.liquid": login Page</li>
+							<li>- "customers/order.liquid": order Page</li>
+							<li>- "customers/register.liquid": register Page</li>
+							<li>- "customers/reset_password.liquid": Reset password Page</li>
+							<li>- "index.liquid": Home Page</li>
+							<li>- "page.contact.liquid": Contact Page</li>
+							<li>- "page.liquid": Default Page</li>
+							<li>- "page.wishlist.liquid": Wishlist Page</li>
+							<li>- "password.liquid": Coming soon</li>
+							<li>- "product.liquid": Trang chi tiết sản phẩm</li>
+							<li>- "search.liquid": Search Page</li>
+						</ul>
+					</div>
+					
+					<div class="block">
+						<h4><b>Thư mục 3:</b> Snippets:</h4>
+						<p>Folder này chứa các code block như 1 module. Ex: Slider, Products Slider, Blog Slider, Collection Sidebar, Blog Sidebar... </p>						
+					</div>
+					
+					<div class="block">
+						<h4><b>Thư mục 4:</b> Assets:</h4>
+						<p>Chứa file css, js, font, images</p>
+						<p>Những file css chính:</p>
+						<ul>
+							<li>- "styles.scss.liquid"</li>
+							<li>- "ultramegamenu.css</li>
+							<li>- "responsive.scss.liquid"</li>
+							<li>- "styles-rtl.scss.liquid"</li>
+						</ul>
+					</div>
+					
+					<div class="block">
+						<h4><b>Thư mục 5:</b> Configs:</h4>
+						<p>Chúng ta chỉ quan tâm đến file: settings_schema.json .Đây là file tạo Controls trong "Option theme"(Customizer).</p>
+						<ul>
+							<li>- "settings_schema.json":</li>
+						</ul>
+					</div>
+					
+					<div class="block">
+						<h4><b>Thư mục 6:</b> Locales:</h4>
+						<p>Chứa các file language.</p>
+					</div>
+					
+					<h3 class="entry-title accent">2.4 Customizer</h3>
+					<p class="block"><img src="assets/images/customizer.png" alt=""></p>
+					<p>Vào file "settings_schema.json" trong folder Config/ . File này cho phép tạo các Controls</p>
+					<p class="block"><img src="assets/images/customizer1.png" alt=""></p>
+					
+					<h3 class="entry-title accent">2.5 Header Block</h3>
+					<p class="block"><img src="assets/images/header.png" alt=""></p>
+					<p class="block"><b>2.5.1 Customizer:</b></p>
+					<p class="block"><img src="assets/images/header1.png" alt=""></p>
+					<p class="block"><b>2.5.2 Code: Vào file header.liquid trong folder snippets/ để chỉnh sửa header block.</b></p>
+					<p class="block"><img src="assets/images/header2.png" alt=""></p>
+					
+					<h3 class="entry-title accent">2.6 Footer Block</h3>
+					<p class="block"><img src="assets/images/footer.png" alt=""></p>
+					<p class="block"><b>2.6.1 Customizer:</b></p>
+					<p class="block"><img src="assets/images/footer1.png" alt=""></p>
+					<p class="block"><b>2.6.2 Code: Vào file footer.liquid trong folder snippets/ để chỉnh sửa footer block.</b></p>
+					<p class="block"><img src="assets/images/footer2.png" alt=""></p>
+					
+					<h3 class="entry-title accent">2.7 Tạo Homepage</h3>	
+					<p class="block"><b>2.7.1 Customizer: Tạo Option cho các Section của Homepage</b></p>
+					<p class="block"><img src="assets/images/homepage.png" alt=""></p>
+					
+					<p class="block"><b>2.7.2 Code: Vào file index.php trong folder templates/ để chỉnh sửa homepage.</b></p>
+					<p class="block"><img src="assets/images/homepage1.png" alt=""></p>
+					
+					<p class="block"><b>2.7.3 Section - Slideshow.</b></p>
+					<p class="block"><img src="assets/images/section-slideshow.png" alt=""></p>
+					<p class="block"><b> - Customizer.</b></p>
+					<p class="block"><img src="assets/images/slideshow.png" alt=""></p>
+					<p class="block"><b> - Code: file nivo-slider.liquid strong folder "snippets/".</b></p>
+					<p class="block"><img src="assets/images/slideshow1.png" alt=""></p>
+					
+					<p class="block"><b>2.7.4 Section - Banner Top, Banner Middle.</b></p>
+					<p class="block"><img src="assets/images/section-banner-top.png" alt=""></p>
+					<p class="block"><b> - Customizer.</b></p>
+					<p class="block"><img src="assets/images/banner-top.png" alt=""></p>
+					<p class="block"><b> - Code: file home-banner-top.liquid, home-banner-middle.liquid strong folder "snippets/".</b></p>
+					<p class="block"><img src="assets/images/banner-top1.png" alt=""></p>
+					
+					<p class="block"><b>2.7.5 Section - Product Slider.</b></p>
+					<p class="block"><img src="assets/images/section-products-slider.png" alt=""></p>
+					<p class="block"><b> - Customizer.</b></p>
+					<p class="block"><img src="assets/images/product-slider.png" alt=""></p>
+					<p class="block"><b> - Code: file home-collection1-slider.liquid, home-collection2-slider.liquid strong folder "snippets/".</b></p>
+					<p class="block"><img src="assets/images/product-slider1.png" alt=""></p>
+					
+					<p class="block"><b>2.7.6 Section - Tab Products.</b></p>
+					<p class="block"><img src="assets/images/section-tab-products.png" alt=""></p>
+					<p class="block"><b> - Customizer.</b></p>
+					<p class="block"><img src="assets/images/tab-products.png" alt=""></p>
+					<p class="block"><b> - Code: file home-tab-collection.liquid strong folder "snippets/".</b></p>
+					<p class="block"><img src="assets/images/tab-products1.png" alt=""></p>
+					
+					<p class="block"><b>2.7.7 Section - Blog Slider.</b></p>
+					<p class="block"><img src="assets/images/section-blog-slider.png" alt=""></p>
+					<p class="block"><b> - Customizer.</b></p>
+					<p class="block"><img src="assets/images/blog-slider.png" alt=""></p>
+					<p class="block"><b> - Code: file home-blog-slider.liquid strong folder "snippets/".</b></p>
+					<p class="block"><img src="assets/images/blog-slider1.png" alt=""></p>
+					
+					<p class="block"><b>2.7.8 Section - Brand Slider.</b></p>
+					<p class="block"><img src="assets/images/brand.png" alt=""></p>
+					<p class="block"><b> - Code: file brand.liquid strong folder "snippets/".</b></p>
+					<p class="block"><img src="assets/images/brand2.png" alt=""></p>
+					
+					<p class="block"><b>2.7.9 Newsletter Popup.</b></p>
+					<p class="block"><img src="assets/images/newsletter-popup.png" alt=""></p>
+					<p class="block"><b> - Customizer.</b></p>
+					<p class="block"><img src="assets/images/newsletter-popup1.png" alt=""></p>
+					<p class="block"><b> - Code: file newsletter-popup.liquid strong folder "snippets/".</b></p>
+					<p class="block"><img src="assets/images/newsletter-popup2.png" alt=""></p>
+					
+					<h3 class="entry-title accent">2.8 Tạo Inner Page</h3>
+					<p><b>2.8.1 Products Category.</b></p>
+					<p class="block">- Code: file collection.liquid trong folder "tempaltes/".</p>
+					
+					<p><b>2.8.2 Single Products.</b></p>
+					<p class="block">- Code: file product.liquid trong folder "tempaltes/".</p>
+					
+					<p><b>2.8.3 Shopping Cart.</b></p>
+					<p class="block">- Code: file cart.liquid trong folder "tempaltes/".</p>
+					
+					<p><b>2.8.4 Blog.</b></p>
+					<p class="block">- Code: file blog.liquid trong folder "tempaltes/".</p>
+					
+					<p><b>2.8.5 Single Blog.</b></p>
+					<p class="block">- Code: file article.liquid trong folder "tempaltes/".</p>
+					
+					<p><b>2.8.6 Page.</b></p>
+					<p class="block">- Code: file page.liquid trong folder "tempaltes/".</p>
+					
+					<h3 class="entry-title accent">2.9 Language</h3>
+					<p class="block">- Code: folder "locales/".</p>
+					
+					<h3 class="entry-title accent">2.10 Tạo Homepage 2</h3>
+					<p class="block"><b> Duplicate theme homepage 1.</b></p>
+					<p class="block"><b> Đổi tên theme sang "tên_theme-home2". Ex: sp-goshop-home2</b></p>
+					<p class="block"><img src="assets/images/homepage21.png" alt=""></p>
+					<p class="block"><img src="assets/images/homepage22.png" alt=""></p>
+					<p class="block"><img src="assets/images/homepage23.png" alt=""></p>
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</section><!-- end #config -->
+	
+	<!-- section - start backup -->
+	<section id="backup" class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="heading">3. Đóng gói</h2>
+					
+					<h3 id="backup1" class="entry-title accent">3.1 Export your theme</h3>
+					<p>Go to this page <a href="https://help.shopify.com/manual/sell-online/online-store/how-do-i-duplicate-my-store#export-import-your-theme" class="accent">http://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu</a> to know how to create dropdown menu in Shopify.</p>
+					<p><img src="assets/images/backup1.png" alt=""></p>					
+					<div class="block">
+						<p>Then click Send Emai. a email will send to your email. Into your email to download theme.</p>
+						<p><img src="assets/images/backup2.png" alt=""></p>
+					</div>
+					
+					<h3 id="export-product" class="entry-title accent">3.2 Export Products</h3>
+					<p><img src="assets/images/export-product.png" alt=""></p>
+					<p>Chọn Export "All products" và kích "Export Products" button.</p>
+					<p><img src="assets/images/export-product1.png" alt=""></p>
+					
+					<h3 id="export-page" class="entry-title accent">3.3 Export Pages</h3>
+					<p>Vào page. copy toàn bộ nội dung của page lưu vào file .xml. Ex: about-us.xml</p>
+					<p class="block"><img src="assets/images/export-page.png" alt=""></p>
+				</div>
+			</div>
+		</div>
+	</section><!-- end #backup -->
+	
+	<!-- section - start finish -->
+	<section id="finish" class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="heading">4. Hoàn thiện</h2>
+
+					<p>Tạo folder đóng gói: tên_theme_v1.0_UNZIP_FIRST/ </p>
+					<p>Ex: folder: sp_goshop_v1.0_UNZIP_FIRST/</p>
+					<p>Bao gồm các folder con: Documentation/, Licensing/, Sample Data/, Theme/</p>
+					<p class="block"><img src="assets/images/finish1.png" alt=""></p>
+					<p><b>Folder Documentation:</b></p> Để trống
+					<p><b>Folder Licensing:</b></p> Gồm 2 files: GPL.txt, README_License.txt
+					<p><b>Folder Sample Data: Gồm file đóng gói products và các page có nội dung.</b></p>
+					<p class="block"><img src="assets/images/finish2.png" alt=""></p>
+					<p><b>Folder Theme:</b> Bao gồm các file đóng gói theme .zip của các home. Ex: sp-goshop-home1.zip, sp-goshop-home2.zip, sp-goshop-home3.zip ...</p>
+					<p class="block"><img src="assets/images/finish3.png" alt=""></p>
+					
+					<p>Cuối cùng nén folder "sp_goshop_v1.0_UNZIP_FIRST/" thành file .zip : sp_goshop_v1.0_UNZIP_FIRST.zip (Giống file .zip trong folder "FINISH/"). Gửi file này cho quản lý.</p>
+				</div>
+			</div>
+		</div>
+	</section><!-- end #finish -->
+	
+	<!-- start footer -->
+	<footer id="footer">
+		<div class="container text-center">
+			<p class="copyright small muted">Copyright © 2016 <a class="accent" href="http://vinagecko.com">VinaGecko.com</a>. All Rights Reserved.</p>
+		</div>
+	</footer><!-- end #footer -->
+
+</div>
+</body>
+</html>
